@@ -14,33 +14,42 @@
         <header class="header">
             <div class="header__info info">
                 <span class="info__slogan">We deliver Worldwide</span>
-                <div class="info__location">Our stores</div>
+                <a class="info__location" href="#">Our stores</a> 
             </div>
             <div class="header__showpanel showpanel">
                 <div class="showpanel__logo">Aurora</div>
-                <input type="text" class="showpanel__search">
-                <div class="showpanel__login"></div>
+                <div class="showpanel__search search">
+                    <input type="text" class="search__input" placeholder="What are you looking for?">
+                </div>
+                <div class="showpanel__login login">
+                    <a href="#" class="login__link login__link_signin">Sign in</a>
+                    |
+                    <a href="#" class="login__link login__link_register">Register</a>
+                    <a href="#" class="login__link login__link_basket"><img class="login__basket" src="img/basket.png" alt="cart"></a>
+                </div>
             </div>
             <ul class="header__menu menu">
-                <li class="menu__item">what’s new</li>
-                <li class="menu__item">women</li>
-                <li class="menu__item">accessories</li>
-                <li class="menu__item">kids</li>
-                <li class="menu__item">beauty</li>
-                <li class="menu__item">outlet</li>
-                <li class="menu__item">stories</li>
+                <li class="menu__item"><a class="menu__link" href="#">what’s new</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">women</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">accessories</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">kids</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">beauty</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">outlet</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">stories</a></li>
             </ul>
         </header>
         <div class="welcome">
             <h2 class="welcome__slogan">Hello! Welcome to Aurora</h2>
         </div>
-        <form class="signup">
-            <span class="signup__phrase">New arrivals. Exclusive previews. First access to sales. Sign up to stay in the know.</span>
-            <input type="text" class="signup__input" placeholder="Your email address">
-            <button class="signup__button">register</button>
-        </form>
+        <div class="signup">
+            <form class="signup__form">
+                <span class="signup__phrase">New arrivals. Exclusive previews. First access to sales. Sign up to stay in the know.</span>
+                <input type="email" class="signup__input" placeholder="Your email address">
+                <button class="signup__button">register</button>
+            </form>
+        </div>
         <footer class="footer">
-            <div class="container__fixed">
+            <div class="container__flex">
                 <div class="footer__block">
                     <h3 class="footer__header">About Us</h3>
                     <a href="#" class="footer__link">Who we are</a>
@@ -66,11 +75,11 @@
                 </div>
                 <div class="footer__block">
                     <h3 class="footer__header">Social</h3>
-                    <a href="#" class="footer__link"></a>
-                    <a href="#" class="footer__link"></a>
-                    <a href="#" class="footer__link"></a>
-                    <a href="#" class="footer__link"></a>
-                    <a href="#" class="footer__link"></a>
+                    <a href="#" class="footer__link"><img class="footer__image" src="img/insta.png" alt="instagram"></a>
+                    <a href="#" class="footer__link"><img class="footer__image" src="img/twitter.png" alt="twitter"></a>
+                    <a href="#" class="footer__link"><img class="footer__image" src="img/snapchat.png" alt="snapchat"></a>
+                    <a href="#" class="footer__link"><img class="footer__image" src="img/facebook.png" alt="facebook"></a>
+                    <a href="#" class="footer__link"><img class="footer__image" src="img/youtube.png" alt="youtube"></a>
                 </div>
             </div>
             <small class="footer__rights">
@@ -79,5 +88,6 @@
         </footer>
     </div>
     
+    <script src="js/scripts.js"></script>
 </body>
 </html>

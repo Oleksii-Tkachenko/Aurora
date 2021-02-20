@@ -118,7 +118,7 @@ function images() {
             imagemin({
                 interlaced: true,
                 progressive: true,
-                optimizationLevel: 3, // 0 to 7
+                optimizationLevel: 2, // 0 to 7
                 svgoPlugins: [{removeViewBox: true}]
             })
         )
